@@ -134,6 +134,7 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     bottom: 0,
+    zIndex: 0,
   },
   content: {
     flex: 1,
@@ -149,6 +150,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 40,
     alignSelf: 'center',
+    zIndex: 2,
   },
   title: {
     fontFamily: 'Nunito-Bold',
