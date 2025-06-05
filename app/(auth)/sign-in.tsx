@@ -39,7 +39,17 @@ export default function SignInScreen() {
 
   return (
     <View style={styles.container}>
-      
+       <Image
+          source={require('@/assets/images/logo.png')}
+          style={styles.logo}
+          resizeMode="contain"
+        />
+      <LinearGradient
+        colors={[colors.gradientStart, colors.gradientEnd]}
+        style={styles.gradientBackground}
+        start={{ x: 0, y: 0 }}
+        end={{ x: 1, y: 0 }}
+      />
 
       <View style={styles.content}>
         <Image
