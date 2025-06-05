@@ -6,6 +6,8 @@ import { colors } from '@/constants/colors';
 import { supabase } from '@/lib/supabase';
 import { LinearGradient } from 'expo-linear-gradient';
 
+import logo from '../../../assets/images/logo.png'; // ajustează calea relativă
+
 export default function SignInScreen() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -38,19 +40,18 @@ export default function SignInScreen() {
   };
 
   return (
-    <View style={styles.container}>
-      <LinearGradient
-        colors={[colors.gradientStart, colors.gradientEnd]}
-        style={styles.gradientBackground}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 0 }}
-      />
-      
+    <LinearGradient
+      colors={[colors.gradientStart, colors.gradientEnd]}
+      style={styles.container}
+      start={{ x: 0, y: 0 }}
+      end={{ x: 1, y: 0 }}
+    >
       <Image
-        source={require('@/assets/images/logo.png')}
+        source={logo}
         style={styles.logo}
         resizeMode="contain"
       />
+
       <View style={styles.content}>
         <View style={styles.header}>
           <Text style={styles.title}>Bine ai revenit!</Text>
@@ -119,30 +120,17 @@ export default function SignInScreen() {
           </View>
         </View>
       </View>
-    </View>
+    </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.white,
-  },
-  gradientBackground: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    zIndex: 0,
   },
   content: {
     flex: 1,
     justifyContent: 'center',
-  },
-  header: {
-    alignItems: 'center',
-    marginBottom: 40,
   },
   logo: {
     width: 200,
@@ -150,7 +138,10 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 40,
     alignSelf: 'center',
-    zIndex: 2,
+  },
+  header: {
+    alignItems: 'center',
+    marginBottom: 40,
   },
   title: {
     fontFamily: 'Nunito-Bold',
