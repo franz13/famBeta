@@ -6,7 +6,7 @@ import { colors } from '@/constants/colors';
 import { supabase } from '@/lib/supabase';
 import { LinearGradient } from 'expo-linear-gradient';
 
-import logo from '../../../assets/images/logo.png'; // ajustează calea relativă
+import logo from '../../assets/images/logo.png';
 
 export default function SignInScreen() {
   const [email, setEmail] = useState('');
