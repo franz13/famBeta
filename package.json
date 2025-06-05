@@ -1,0 +1,42 @@
+{
+  "dependencies": {
+    "@expo-google-fonts/nunito": "^0.2.3",
+    "@expo/metro-config": "^0.20.14",
+    "@supabase/supabase-js": "^2.49.10",
+    "expo": "~53.0.10",
+    "expo-font": "~13.3.1",
+    "expo-linear-gradient": "~14.1.5",
+    "expo-linking": "~7.1.5",
+    "expo-router": "~5.0.7",
+    "expo-splash-screen": "^0.30.9",
+    "expo-status-bar": "~2.2.3",
+    "expo-web-browser": "~14.1.6",
+    "lucide-react-native": "^0.359.0",
+    "metro": "^0.82.4",
+    "metro-react-native-babel-transformer": "~0.76.8",
+    "metro-runtime": "~0.76.8",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-native": "^0.79.3",
+    "react-native-confetti-cannon": "^1.5.2",
+    "react-native-safe-area-context": "^5.4.0",
+    "react-native-screens": "~4.11.1",
+    "react-native-svg": "^15.12.0",
+    "stream-browserify": "^3.0.0",
+    "web-streams-polyfill": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/react": "~19.0.10",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.0"
+  },
+  "scripts": {
+    "dev": "npx expo start --clear",
+    "start": "npx expo start",
+    "android": "npx expo start --android",
+    "ios": "npx expo start --ios",
+    "web": "npx expo start --web"
+  },
+  "main": "expo-router/entry"
+}
