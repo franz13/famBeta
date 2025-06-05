@@ -138,6 +138,7 @@ const styles = StyleSheet.create({
   content: {
     flex: 1,
     justifyContent: 'center',
+    paddingTop: 140,
   },
   header: {
     alignItems: 'center',
@@ -146,8 +147,8 @@ const styles = StyleSheet.create({
   logo: {
     width: 200,
     height: 80,
-    marginTop: 60,
-    marginBottom: 24,
+    position: 'absolute',
+    top: 40,
     alignSelf: 'center',
   },
   title: {
