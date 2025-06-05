@@ -33,7 +33,7 @@ export default function RootLayout() {
     return (
       <View style={styles.container}>
         <Image 
-          source={require('@/assets/images/TIER1_simbol si nume_RGB-10.png')}
+          source={require('@/assets/images/logo.png')}
           style={styles.logo}
           resizeMode="contain"
         />
