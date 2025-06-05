@@ -45,13 +45,14 @@ export default function SignInScreen() {
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 0 }}
       />
-      
-      <Image
-        source={require('@/assets/images/logo.png')}
-        style={styles.logo}
-        resizeMode="contain"
-      />
+
       <View style={styles.content}>
+        <Image
+          source={require('@/assets/images/logo.png')}
+          style={styles.logo}
+          resizeMode="contain"
+        />
+
         <View style={styles.header}>
           <Text style={styles.title}>Bine ai revenit!</Text>
           <Text style={styles.subtitle}>Conectează-te pentru a continua</Text>
@@ -139,18 +140,20 @@ const styles = StyleSheet.create({
   content: {
     flex: 1,
     justifyContent: 'center',
-  },
-  header: {
-    alignItems: 'center',
-    marginBottom: 40,
+    zIndex: 1,
   },
   logo: {
     width: 200,
     height: 80,
-    position: 'absolute',
-    top: 40,
     alignSelf: 'center',
+    marginBottom: 16,
     zIndex: 2,
+    borderWidth: 1,           // <-- doar pentru debugging
+    borderColor: 'red',       // <-- doar pentru debugging
+  },
+  header: {
+    alignItems: 'center',
+    marginBottom: 40,
   },
   title: {
     fontFamily: 'Nunito-Bold',
