@@ -1,9 +1,20 @@
-import { Tabs } from 'expo-router';
+import { Tabs, Redirect } from 'expo-router';
 import { View, StyleSheet, Image } from 'react-native';
 import { Chrome as Home, SquareCheck as CheckSquare, Award, TrendingUp, User, MessageCircle, Shield } from 'lucide-react-native';
 import { colors } from '@/constants/colors';
+import { useAuth } from '@/hooks/useAuth';
 
 export default function TabLayout() {
+  const { session, loading } = useAuth();
+
+  if (loading) {
+    return null;
+  }
+
+  if (!session) {
+    return <Redirect href="/sign-in" />;
+  }
+
   return (
     <Tabs
       screenOptions={{
