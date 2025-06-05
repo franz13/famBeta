@@ -27,7 +27,7 @@ export default function TabLayout() {
         headerStyle: styles.header,
         headerTitle: () => (
           <Image
-            source={require('@/assets/images/TIER1_simbol si nume_RGB-10.png')}
+            source={require('@/assets/images/logo.png')}
             style={styles.headerLogo}
             resizeMode="contain"
           />

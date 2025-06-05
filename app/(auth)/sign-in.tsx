@@ -49,7 +49,7 @@ export default function SignInScreen() {
       <View style={styles.content}>
         <View style={styles.header}>
           <Image
-            source={require('@/assets/images/TIER1_simbol si nume_RGB-10.png')}
+            source={require('@/assets/images/logo.png')}
             style={styles.logo}
             resizeMode="contain"
           />
