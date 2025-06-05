@@ -75,6 +75,11 @@ export default function SignUpScreen() {
           style={styles.headerImage}
         />
         <View style={styles.overlay} />
+        <Image
+          source={require('@/assets/images/logo.png')}
+          style={styles.logo}
+          resizeMode="contain"
+        />
         <Text style={styles.title}>Creează-ți cont</Text>
         <Text style={styles.subtitle}>Alătură-te familiei FamSync</Text>
       </View>
@@ -186,6 +191,13 @@ const styles = StyleSheet.create({
   overlay: {
     ...StyleSheet.absoluteFillObject,
     backgroundColor: 'rgba(79, 124, 172, 0.8)',
+  },
+  logo: {
+    width: 200,
+    height: 80,
+    position: 'absolute',
+    top: 40,
+    alignSelf: 'center',
   },
   title: {
     fontFamily: 'Nunito-Bold',
