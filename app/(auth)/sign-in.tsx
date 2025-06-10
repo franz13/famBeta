@@ -6,7 +6,6 @@ import { colors } from '@/constants/colors';
 import { supabase } from '@/lib/supabase';
 import { LinearGradient } from 'expo-linear-gradient';
 
-import logo from '../../assets/images/logo.png';
 
 export default function SignInScreen() {
   const [email, setEmail] = useState('');
@@ -47,7 +46,7 @@ export default function SignInScreen() {
       end={{ x: 1, y: 0 }}
     >
       <Image
-        source={logo}
+        source={require('@/assets/images/logo.png')}
         style={styles.logo}
         resizeMode="contain"
       />
