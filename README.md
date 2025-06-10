@@ -9,7 +9,11 @@ Acesta este un proiect React Native construit cu Expo si Expo Router. Aplicatia 
    ```bash
    npm install
    ```
-3. Creeaza un fisier `.env` la radacina proiectului cu urmatoarele variabile:
+3. Copiaza fisierul `.env.example` la radacina proiectului sub numele `.env` si completeaza variabilele:
+   ```bash
+   cp .env.example .env
+   ```
+   Actualizeaza valorile pentru:
    ```env
    EXPO_PUBLIC_SUPABASE_URL=<url_supabase>
    EXPO_PUBLIC_SUPABASE_ANON_KEY=<cheie_anon>
