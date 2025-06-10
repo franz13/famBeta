@@ -45,14 +45,17 @@ export default function SignInScreen() {
       start={{ x: 0, y: 0 }}
       end={{ x: 1, y: 0 }}
     >
-      <Image
-        source={require('@/assets/images/logo.png')}
-        style={styles.logo}
-        resizeMode="contain"
-      />
+      <View style={styles.logoContainer}>
+        <Image
+          source={require('@/assets/images/logo.png')}
+          style={styles.logo}
+          resizeMode="contain"
+        />
+      </View>
 
       <View style={styles.content}>
         <View style={styles.header}>
+          
           <Text style={styles.title}>Bine ai revenit!</Text>
           <Text style={styles.subtitle}>Conectează-te pentru a continua</Text>
         </View>
@@ -131,12 +134,21 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
   },
-  logo: {
-    width: 200,
-    height: 80,
-    position: 'absolute',
-    top: 40,
+  logoContainer: {
+     // fundal alb semi-transparent
+    borderRadius: 12,
+    padding: 8,
     alignSelf: 'center',
+    marginTop: 80,
+  },
+  logo: {
+    width: 400,
+    height: 200,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.5,
+    shadowRadius: 4,
+    elevation: 5, // pentru Android
   },
   header: {
     alignItems: 'center',
